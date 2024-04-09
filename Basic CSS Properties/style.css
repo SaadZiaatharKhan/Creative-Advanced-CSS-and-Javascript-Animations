@@ -1,0 +1,216 @@
+*{
+    margin: 7px;
+    padding: 7px;
+}
+
+body{
+    background-color: black;
+}
+
+.color-changing-button{
+    height: 90px;
+    width: 250px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    transition-property:background-color;
+    transition-duration: 1s;
+}
+
+.color-changing-button:hover{
+    background-color: green;
+}
+
+.container1{
+    width: 960px;
+}
+
+.move{
+    margin: 2px;
+    width: 150px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: red;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: .5em;
+    font-size: 20px;
+    transition-property: translate();
+    transition-duration: 3s;
+}
+
+#ease{
+    transition-timing-function: ease;
+}
+
+#linear{
+    transition-timing-function: linear;
+}
+
+#ease-in{
+    transition-timing-function: ease-in;
+}
+
+#ease-out{
+    transition-timing-function: ease-out;
+}
+
+#ease-in-out{
+    transition-timing-function: ease-in-out;
+}
+
+.move:hover{
+    transform: translate(900px,0)
+}
+
+.transition-delay{
+    height: 90px;
+    width: 250px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    transition-property:background-color;
+    transition-duration: 1s;
+    transition-delay: 2s;
+}
+
+.transition-delay:hover{
+    background-color: green;
+}
+
+.change-in-more-property{
+    height: 90px;
+    width: 250px;
+    height: auto;
+    font-size: 28px;
+    color: white;
+    border: none;
+    background-color: blue;
+    transition: background-color 3s ease-in-out 1s,
+    color 2s ease 4s,
+    border-radius 4s ease-out 3s
+}
+
+.change-in-more-property:hover{
+    background-color: green;
+    color: rgb(122, 18, 143);
+    border-radius: 50%;
+}
+
+.translate{
+    height: 90px;
+    width: 250px;
+    height: auto;
+    font-size: 28px;
+    color: white;
+    border: none;
+    display: block;
+    background-color: blue;
+    transition: transform 2s
+}
+
+.translate:hover{
+    transform:translate(500px,-200px)
+}
+
+.scale{
+    height: 90px;
+    width: 250px;
+    height: auto;
+    font-size: 28px;
+    color: white;
+    border: none;
+    display: block;
+    background-color: blue;
+    transition: transform 2s
+}
+
+.scale:hover{
+    transform:scale(2,3)
+}
+
+.rotate{
+    height: 90px;
+    width: 250px;
+    height: auto;
+    font-size: 28px;
+    color: white;
+    border: none;
+    display: block;
+    background-color: blue;
+    transition: transform 2s
+}
+
+.rotate:hover{
+    transform:rotate(60deg) /* "-" sign can be used for clockwise rotation. Other units are rad, turn, grad. */
+}
+
+.skew{
+    height: 90px;
+    width: 250px;
+    height: auto;
+    font-size: 28px;
+    color: white;
+    border: none;
+    display: block;
+    background-color: blue;
+    transition: transform 2s
+}
+
+.skew:hover{
+    transform:skewY(60deg)
+}
+
+.transform-origin{
+    width: 250px;
+    height: auto;
+    font-size: 28px;
+    color: white;
+    border: none;
+    display: block;
+    background-color: blue;
+    transition: transform 1s;
+    transform-origin:top;
+}
+
+.transform-origin:hover{
+    transform: rotate(60deg)
+}
+
+.t3d{
+    perspective: 500px; /* For Creating A 3D Environment perspective is to be set for the element to be transformed */
+}
+
+.translate3d{
+    width: 250px;
+    height: auto;
+    font-size: 28px;
+    color: white;
+    border: none;
+    display: block;
+    background-color: blue;
+    transition: transform 1s;
+}
+
+.translate3d:hover{
+    transform: translateZ(200px)
+}
+
+.rotate3d{
+    width: 250px;
+    height: auto;
+    font-size: 28px;
+    color: white;
+    border: none;
+    display: block;
+    background-color: blue;
+    transition: transform 1s;
+}
+
+.rotate3d:hover{
+    transform: rotateX(60deg) rotateY(60deg)
+}
+

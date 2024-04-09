@@ -1,0 +1,338 @@
+*{
+    margin: 7px;
+    padding: 7px;
+}
+
+body{
+    background-color: rgb(188, 184, 184);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    padding: 5px;
+}
+
+#color-coming-inside-button{
+    text-decoration: none;
+    color: #272727;
+    font-family: sans-serif;
+    font-size: 45px;
+    border: 5px solid #272727;
+    padding: 40px 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+#color-coming-inside-button:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff200;
+    height: 100%; 
+    width: 100%;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    transition: transform 1s;
+}
+
+#color-coming-inside-button:hover:before{
+    transform: rotate(0deg);
+}
+
+#creative-swipe-effect{
+    text-decoration: none;
+    color:#351435;
+    font-family: sans-serif;
+    font-size: 40px;
+    border: 3px solid #351435;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+#creative-swipe-effect:before{
+    content: '';
+    position: absolute; 
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #351435;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+#creative-swipe-effect:hover:before{
+    transform:translateX(0)
+}
+
+#creative-swipe-effect:hover{
+    color: white;
+}
+
+#square-cut-open{
+    padding: 40px 80px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #262626;
+    font-size: 45px;
+    letter-spacing: 2px;
+    border:5px;
+    border:5px solid #262626;
+    position: relative;
+    transition: 1s;
+}
+
+#square-cut-open:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: #262626;
+    z-index: -1;
+    transition: 1s;
+    transform: rotateX(90deg);
+}
+
+#square-cut-open:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: #262626;
+    z-index: -1;
+    transition: 1s;
+    transform: rotateY(90deg);
+}
+
+#square-cut-open:hover:before{
+    transform:rotateX(0deg)
+}
+
+#square-cut-open:hover:after{
+    transform:rotateY(0deg)
+}
+
+#square-cut-open:hover{
+    color:white
+}
+
+#stretching-button{
+    text-decoration: none;
+    padding: 40px 80px;
+    color: #E13320;
+    border: 3px solid #E13320;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'roboto';
+    font-weight: 300;
+    letter-spacing: -2px;
+    transition: all 0.5s;
+}
+
+#stretching-button:hover{
+    font-weight: 900;
+    letter-spacing: 10px;
+    border: 7px solid #E13320;
+}
+
+#swipe-top-to-bottom-with-text{
+    text-decoration: none;
+    color:white;
+    font-family: sans-serif;
+    font-size: 40px;
+    border: 3px solid white;
+    padding: 40px 80px;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    background-color: #222;
+}
+
+#swipe-top-to-bottom-with-text:before{
+    content: 'NICE';
+    color: white;
+    position: absolute; 
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F44336;
+    transform: translateY(-100%);
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#swipe-top-to-bottom-with-text:hover:before{
+    transform:translateY(0)
+}
+
+#swipe-top-to-bottom-with-text:hover{
+    color:white
+}
+
+#glowing-with-slash{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    border: 3px solid white;
+    padding: 40px 80px;
+    transition: all 0.3s;
+    position: relative;
+    background-color: #222;
+    overflow: hidden;
+}
+
+#glowing-with-slash:hover{
+    background-color: red;
+
+}
+
+#glowing-with-slash:before{
+    content: '';
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s;
+}
+
+#glowing-with-slash:hover:before{
+    transform: translateX(100%) rotate(45deg)
+}
+
+#two-layers-swapping{
+    text-decoration: none;
+    background-color: #262626;
+    font-family: sans-serif;
+    border: 4px solid #262626;
+    padding: 40px 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#two-layers-swapping:before{
+    content:'Hover Me';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fffa65;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+#two-layers-swapping:after{
+    content:'Hover Me';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fffa65;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: translate(-100%,100%)
+}
+
+#two-layers-swapping:hover:before{
+    transform: translate(100%,-100%);
+}
+
+#two-layers-swapping:hover:after{
+    transform: translate(0,0);
+}
+
+#text-scaling{
+    text-decoration: none;
+    color: #262626;
+    font-family: sans-serif;
+    font-size: 40px;
+    border: 3px solid #262626;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-scaling:before{
+    content: 'Hover Me';
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(5);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#text-scaling:hover:before{
+    transform: scale(1);
+    opacity: 1;
+}
+
+#circular-swapping{
+    border: 2px solid tomato;
+    background: none;
+    color: tomato;
+    padding: 20px 40px;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+
+#circular-swapping:hover{
+    color: white;
+}
+
+#circular-swapping:before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: tomato;
+    z-index: -1;
+    border-radius: 50% 50% 0% 0%;
+    transition: all 0.5s;
+}
+
+#circular-swapping:hover:before{
+    height: 190%;
+}
+
